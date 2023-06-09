@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container-fluid{
+    background:linear-gradient(to right bottom, #e1b382, #c89666);
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+}
+.app-wrapper{
+    background-color:#12343b;
+    min-width:450px;
+    min-height:600px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:3px 6px 40px #000;
+    margin:40px;
+}
+.header h1{
+    color:#fff;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:1px;
+}
+.task-input{
+    outline:none;
+    width:260px;
+    padding:7px;
+    margin-right:25px;
+    margin-top:10px;
+    font-size:20px;
+    color:#ccc;
+    background-color:#000000;
+    border:1px solid #c89666;
+    border-radius:10px;
+}
+.button-add{
+    width:70px;
+    padding:7px;
+    font-size:20px;
+    border-radius:10px;
+    border:0;
+    background-color:#f1af71;
+}
+.list-item{
+    display:flex;
+    margin:20px 0;
+    border:1px solid #ccc;
+    border-radius:10px;
+    padding:7px;
+    min-height:30px;
+}
+.list{
+    width:310px;
+    background-color:#12343b;
+    border:none;
+    color:#ccc;
+    font-size:20px;
+    padding-left:10px;
+}
+.button-edit,
+.button-delete{
+    border:none;
+    background-color:transparent;
+    font-size:20px;
+}
+.button-edit{
+    color:#e2d029;
+    margin-right:10px;
+    margin-left:10px;
+}
+.button-delete{
+    color:#20b2aa;
+}
+input:focus,
+button:focus{
+    outline:none;
+}
+.image-css{
+    height:200px;
+    width:250px;
+    padding-left:40px;
+}
+
+
+
+/* media query */
+@media (max-width:768px) {
+    .app-wrapper{
+        min-width:380px;
+        min-height:600px;
+        padding:30px;
+    }
+    .task-input{
+        width:230px;
+    }
+    .list{
+        width:250px;
+    }
+    .button-add{
+        width:60px;
+    }
+    .image-css{
+        height:150px;
+        width:200px;
+        padding-left:40px;
+    }
+}
+
+@media (max-width:500px) {
+    .app-wrapper{
+        min-width:300px;
+        min-height:600px;
+        padding:30px;
+    }
+    .task-input{
+        width:160px;
+    }
+    .list{
+        width:160px;
+    }
+    .button-add{
+        width:50px;
+    }
+    .image-css{
+        height:120px;
+        width:160px;
+        padding-left:30px;
+    }
+}
+
+@media (max-width:350px) {
+    .app-wrapper{
+        min-width:260px;
+        min-height:600px;
+        padding:25px;
+    }
+    .task-input{
+        width:130px;
+    }
+    .list{
+        width:130px;
+    }
+    .button-add{
+        width:50px;
+    }
+}
